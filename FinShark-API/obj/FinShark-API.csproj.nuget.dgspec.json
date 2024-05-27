@@ -1,28 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Michael\\Documents\\code\\FinShark\\FinShark-API\\FinShark-API.csproj": {}
+    "/Users/michaelbernasol/RiderProjects/finshark/FinShark-API/FinShark-API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Michael\\Documents\\code\\FinShark\\FinShark-API\\FinShark-API.csproj": {
+    "/Users/michaelbernasol/RiderProjects/finshark/FinShark-API/FinShark-API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Michael\\Documents\\code\\FinShark\\FinShark-API\\FinShark-API.csproj",
+        "projectUniqueName": "/Users/michaelbernasol/RiderProjects/finshark/FinShark-API/FinShark-API.csproj",
         "projectName": "FinShark-API",
-        "projectPath": "C:\\Users\\Michael\\Documents\\code\\FinShark\\FinShark-API\\FinShark-API.csproj",
-        "packagesPath": "C:\\Users\\Michael\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Michael\\Documents\\code\\FinShark\\FinShark-API\\obj\\",
+        "projectPath": "/Users/michaelbernasol/RiderProjects/finshark/FinShark-API/FinShark-API.csproj",
+        "packagesPath": "/Users/michaelbernasol/.nuget/packages/",
+        "outputPath": "/Users/michaelbernasol/RiderProjects/finshark/FinShark-API/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Michael\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/michaelbernasol/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net8.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -35,17 +32,26 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Design": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
+            "Microsoft.EntityFrameworkCore.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.5, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
@@ -70,7 +76,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/8.0.204/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
