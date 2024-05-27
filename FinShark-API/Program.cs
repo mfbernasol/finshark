@@ -1,4 +1,6 @@
 using FinShark_API.Data;
+using FinShark_API.Interfaces;
+using FinShark_API.Repository;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -14,6 +16,7 @@ builder.Services.AddDbContext<ApplicationDBContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection"));
 
 });
+builder.Services.AddScoped<IStockRepository, StockRepository>();
 
 var app = builder.Build();
 
